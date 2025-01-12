@@ -13,3 +13,5 @@ app.get("/vercel", (req,res) => {
 app.listen(4000 , (req, res) => {
  console.log(`app running on port ${4000}`);
 })
+
+module.exports = app;
