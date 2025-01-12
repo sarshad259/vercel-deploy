@@ -1,4 +1,5 @@
 const express = require("express");
+const users = require("./data/user");
 const app = express();
 
 
@@ -8,6 +9,10 @@ app.get("/", (req,res) => {
 
 app.get("/vercel", (req,res) => {
     res.send("you are on vercel")
+})
+
+app.get("/users", (req,res) => {
+    res.send(users)
 })
 
 app.listen(4000 , (req, res) => {
